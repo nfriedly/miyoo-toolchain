@@ -1,0 +1,1082 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Audio-channels: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-audio.html" title="Audio Library">
+<link rel="prev" href="GstAudioBaseSrc.html" title="GstAudioBaseSrc">
+<link rel="next" href="gst-plugins-base-libs-GstAudioConverter.html" title="GstAudioConverter">
+<meta name="generator" content="GTK-Doc V1.26 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-libs-Audio-channels.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-audio.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstAudioBaseSrc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-libs-GstAudioConverter.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-libs-Audio-channels"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-libs-Audio-channels.top_of_page"></a>Audio-channels</span></h2>
+<p>Audio-channels — Support library for audio channel handling</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-Audio-channels.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#GST-AUDIO-CHANNEL-POSITION-MASK:CAPS" title="GST_AUDIO_CHANNEL_POSITION_MASK()">GST_AUDIO_CHANNEL_POSITION_MASK</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-positions-to-mask" title="gst_audio_channel_positions_to_mask ()">gst_audio_channel_positions_to_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-positions-from-mask" title="gst_audio_channel_positions_from_mask ()">gst_audio_channel_positions_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-positions-to-valid-order" title="gst_audio_channel_positions_to_valid_order ()">gst_audio_channel_positions_to_valid_order</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-get-fallback-mask" title="gst_audio_channel_get_fallback_mask ()">gst_audio_channel_get_fallback_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-check-valid-channel-positions" title="gst_audio_check_valid_channel_positions ()">gst_audio_check_valid_channel_positions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-buffer-reorder-channels" title="gst_audio_buffer_reorder_channels ()">gst_audio_buffer_reorder_channels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-reorder-channels" title="gst_audio_reorder_channels ()">gst_audio_reorder_channels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-get-channel-reorder-map" title="gst_audio_get_channel_reorder_map ()">gst_audio_get_channel_reorder_map</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-positions-to-string" title="gst_audio_channel_positions_to_string ()">gst_audio_channel_positions_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer"><span class="returnvalue">GstAudioChannelMixer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-mixer-new" title="gst_audio_channel_mixer_new ()">gst_audio_channel_mixer_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-mixer-free" title="gst_audio_channel_mixer_free ()">gst_audio_channel_mixer_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-mixer-is-passthrough" title="gst_audio_channel_mixer_is_passthrough ()">gst_audio_channel_mixer_is_passthrough</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-mixer-samples" title="gst_audio_channel_mixer_samples ()">gst_audio_channel_mixer_samples</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-Audio-channels.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition">GstAudioChannelPosition</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer">GstAudioChannelMixer</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixerFlags" title="enum GstAudioChannelMixerFlags">GstAudioChannelMixerFlags</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-Audio-channels.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/audio/audio.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-Audio-channels.description"></a><h2>Description</h2>
+<p>This library contains some helper functions for multichannel audio.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-Audio-channels.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GST-AUDIO-CHANNEL-POSITION-MASK:CAPS"></a><h3>GST_AUDIO_CHANNEL_POSITION_MASK()</h3>
+<pre class="programlisting">#define GST_AUDIO_CHANNEL_POSITION_MASK(pos) (G_GUINT64_CONSTANT(1)&lt;&lt; GST_AUDIO_CHANNEL_POSITION_ ## pos)
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-positions-to-mask"></a><h3>gst_audio_channel_positions_to_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_channel_positions_to_mask (<em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *position</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> force_order</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> *channel_mask</code></em>);</pre>
+<p>Convert the <em class="parameter"><code>position</code></em>
+ array of <em class="parameter"><code>channels</code></em>
+ channels to a bitmask.</p>
+<p>If <em class="parameter"><code>force_order</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> it additionally checks if the channels are
+in the order required by GStreamer.</p>
+<div class="refsect3">
+<a name="gst-audio-channel-positions-to-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The <a href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition"><code class="literal">GstAudioChannelPositions</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=channels]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>The number of channels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>force_order</p></td>
+<td class="parameter_description"><p>Only consider the GStreamer channel order.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel_mask</p></td>
+<td class="parameter_description"><p>the output channel mask. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-channel-positions-to-mask.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the channel positions are valid and could be converted.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-positions-from-mask"></a><h3>gst_audio_channel_positions_from_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_channel_positions_from_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> channel_mask</code></em>,
+                                       <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *position</code></em>);</pre>
+<p>Convert the <em class="parameter"><code>channels</code></em>
+ present in <em class="parameter"><code>channel_mask</code></em>
+ to a <em class="parameter"><code>position</code></em>
+ array
+(which should have at least <em class="parameter"><code>channels</code></em>
+ entries ensured by caller).
+If <em class="parameter"><code>channel_mask</code></em>
+ is set to 0, it is considered as 'not present' for purpose
+of conversion.
+A partially valid <em class="parameter"><code>channel_mask</code></em>
+ with less bits set than the number
+of channels is considered valid.</p>
+<div class="refsect3">
+<a name="gst-audio-channel-positions-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>The number of channels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel_mask</p></td>
+<td class="parameter_description"><p>The input channel_mask</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The
+<a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><code class="literal">GstAudioChannelPosition</code></a>s. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=channels]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-channel-positions-from-mask.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if channel and channel mask are valid and could be converted</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-positions-to-valid-order"></a><h3>gst_audio_channel_positions_to_valid_order ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_channel_positions_to_valid_order
+                               (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *position</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>);</pre>
+<p>Reorders the channel positions in <em class="parameter"><code>position</code></em>
+ from any order to
+the GStreamer channel order.</p>
+<div class="refsect3">
+<a name="gst-audio-channel-positions-to-valid-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The channel positions to
+reorder to. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=channels]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>The number of channels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-channel-positions-to-valid-order.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the channel positions are valid and reordering
+was successful.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-get-fallback-mask"></a><h3>gst_audio_channel_get_fallback_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+gst_audio_channel_get_fallback_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>);</pre>
+<p>Get the fallback channel-mask for the given number of channels.</p>
+<p>This function returns a reasonable fallback channel-mask and should be
+called as a last resort when the specific channel map is unknown.</p>
+<div class="refsect3">
+<a name="gst-audio-channel-get-fallback-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>the number of channels</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-channel-get-fallback-mask.returns"></a><h4>Returns</h4>
+<p> a fallback channel-mask for <em class="parameter"><code>channels</code></em>
+or 0 when there is no
+mask and mono.</p>
+</div>
+<p class="since">Since: 1.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-check-valid-channel-positions"></a><h3>gst_audio_check_valid_channel_positions ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_check_valid_channel_positions
+                               (<em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *position</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> force_order</code></em>);</pre>
+<p>Checks if <em class="parameter"><code>position</code></em>
+ contains valid channel positions for
+<em class="parameter"><code>channels</code></em>
+ channels. If <em class="parameter"><code>force_order</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> it additionally
+checks if the channels are in the order required by GStreamer.</p>
+<div class="refsect3">
+<a name="gst-audio-check-valid-channel-positions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The <a href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition"><code class="literal">GstAudioChannelPositions</code></a>
+to check. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=channels]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>The number of channels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>force_order</p></td>
+<td class="parameter_description"><p>Only consider the GStreamer channel order.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-check-valid-channel-positions.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the channel positions are valid.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-buffer-reorder-channels"></a><h3>gst_audio_buffer_reorder_channels ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_buffer_reorder_channels (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> *buffer</code></em>,
+                                   <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioFormat" title="enum GstAudioFormat"><span class="type">GstAudioFormat</span></a> format</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>,
+                                   <em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *from</code></em>,
+                                   <em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *to</code></em>);</pre>
+<p>Reorders <em class="parameter"><code>buffer</code></em>
+ from the channel positions <em class="parameter"><code>from</code></em>
+ to the channel
+positions <em class="parameter"><code>to</code></em>
+. <em class="parameter"><code>from</code></em>
+ and <em class="parameter"><code>to</code></em>
+ must contain the same number of
+positions and the same positions, only in a different order.
+<em class="parameter"><code>buffer</code></em>
+ must be writable.</p>
+<div class="refsect3">
+<a name="gst-audio-buffer-reorder-channels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>The buffer to reorder.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioFormat" title="enum GstAudioFormat"><code class="literal">GstAudioFormat</code></a> of the buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>The number of channels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>The channel positions in the buffer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>The channel positions to convert to. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-buffer-reorder-channels.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the reordering was possible.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-reorder-channels"></a><h3>gst_audio_reorder_channels ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_reorder_channels (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> size</code></em>,
+                            <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioFormat" title="enum GstAudioFormat"><span class="type">GstAudioFormat</span></a> format</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>,
+                            <em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *from</code></em>,
+                            <em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *to</code></em>);</pre>
+<p>Reorders <em class="parameter"><code>data</code></em>
+ from the channel positions <em class="parameter"><code>from</code></em>
+ to the channel
+positions <em class="parameter"><code>to</code></em>
+. <em class="parameter"><code>from</code></em>
+ and <em class="parameter"><code>to</code></em>
+ must contain the same number of
+positions and the same positions, only in a different order.</p>
+<div class="refsect3">
+<a name="gst-audio-reorder-channels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>The pointer to
+the memory. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=size][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> guint8]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of the memory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioFormat" title="enum GstAudioFormat"><code class="literal">GstAudioFormat</code></a> of the buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>The number of channels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>The channel positions in the buffer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>The channel positions to convert to. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-reorder-channels.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the reordering was possible.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-get-channel-reorder-map"></a><h3>gst_audio_get_channel_reorder_map ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_get_channel_reorder_map (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>,
+                                   <em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *from</code></em>,
+                                   <em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *to</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *reorder_map</code></em>);</pre>
+<p>Returns a reorder map for <em class="parameter"><code>from</code></em>
+ to <em class="parameter"><code>to</code></em>
+ that can be used in
+custom channel reordering code, e.g. to convert from or to the
+GStreamer channel order. <em class="parameter"><code>from</code></em>
+ and <em class="parameter"><code>to</code></em>
+ must contain the same
+number of positions and the same positions, only in a
+different order.</p>
+<p>The resulting <em class="parameter"><code>reorder_map</code></em>
+ can be used for reordering by assigning
+channel i of the input to channel reorder_map[i] of the output.</p>
+<div class="refsect3">
+<a name="gst-audio-get-channel-reorder-map.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>The number of channels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>The channel positions to reorder from. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>The channel positions to reorder to. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>reorder_map</p></td>
+<td class="parameter_description"><p>Pointer to the reorder map. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-get-channel-reorder-map.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the channel positions are valid and reordering
+is possible.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-positions-to-string"></a><h3>gst_audio_channel_positions_to_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_audio_channel_positions_to_string (<em class="parameter"><code>const <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *position</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channels</code></em>);</pre>
+<p>Converts <em class="parameter"><code>position</code></em>
+ to a human-readable string representation for
+debugging purposes.</p>
+<div class="refsect3">
+<a name="gst-audio-channel-positions-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The <a href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition"><code class="literal">GstAudioChannelPositions</code></a>
+to convert. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=channels]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channels</p></td>
+<td class="parameter_description"><p>The number of channels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-channel-positions-to-string.returns"></a><h4>Returns</h4>
+<p>a newly allocated string representing
+<em class="parameter"><code>position</code></em>
+</p>
+<p>Since 1.10. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-mixer-new"></a><h3>gst_audio_channel_mixer_new ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer"><span class="returnvalue">GstAudioChannelMixer</span></a> *
+gst_audio_channel_mixer_new (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixerFlags" title="enum GstAudioChannelMixerFlags"><span class="type">GstAudioChannelMixerFlags</span></a> flags</code></em>,
+                             <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioFormat" title="enum GstAudioFormat"><span class="type">GstAudioFormat</span></a> format</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> in_channels</code></em>,
+                             <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *in_position</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> out_channels</code></em>,
+                             <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelPosition" title="enum GstAudioChannelPosition"><span class="type">GstAudioChannelPosition</span></a> *out_position</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-mixer-free"></a><h3>gst_audio_channel_mixer_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_audio_channel_mixer_free (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer"><span class="type">GstAudioChannelMixer</span></a> *mix</code></em>);</pre>
+<p>Free memory allocated by <em class="parameter"><code>mix</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-audio-channel-mixer-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mix</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer"><span class="type">GstAudioChannelMixer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-mixer-is-passthrough"></a><h3>gst_audio_channel_mixer_is_passthrough ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_channel_mixer_is_passthrough
+                               (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer"><span class="type">GstAudioChannelMixer</span></a> *mix</code></em>);</pre>
+<p>Check if <em class="parameter"><code>mix</code></em>
+ is in passthrough.</p>
+<div class="refsect3">
+<a name="gst-audio-channel-mixer-is-passthrough.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mix</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer"><span class="type">GstAudioChannelMixer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-channel-mixer-is-passthrough.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is <em class="parameter"><code>mix</code></em>
+is passthrough.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-channel-mixer-samples"></a><h3>gst_audio_channel_mixer_samples ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_audio_channel_mixer_samples (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer"><span class="type">GstAudioChannelMixer</span></a> *mix</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> in[]</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> out[]</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> samples</code></em>);</pre>
+<p>In case the samples are interleaved, <em class="parameter"><code>in</code></em>
+ and <em class="parameter"><code>out</code></em>
+ must point to an
+array with a single element pointing to a block of interleaved samples.</p>
+<p>If non-interleaved samples are used, <em class="parameter"><code>in</code></em>
+ and <em class="parameter"><code>out</code></em>
+ must point to an
+array with pointers to memory blocks, one for each channel.</p>
+<p>Perform channel mixing on <em class="parameter"><code>in_data</code></em>
+ and write the result to <em class="parameter"><code>out_data</code></em>
+.
+<em class="parameter"><code>in_data</code></em>
+ and <em class="parameter"><code>out_data</code></em>
+ need to be in <em class="parameter"><code>format</code></em>
+ and <em class="parameter"><code>layout</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-audio-channel-mixer-samples.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mix</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-Audio-channels.html#GstAudioChannelMixer" title="GstAudioChannelMixer"><span class="type">GstAudioChannelMixer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in</p></td>
+<td class="parameter_description"><p>input samples</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>output samples</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>samples</p></td>
+<td class="parameter_description"><p>number of samples</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-Audio-channels.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstAudioChannelPosition"></a><h3>enum GstAudioChannelPosition</h3>
+<p>Audio channel positions.</p>
+<p>These are the channels defined in SMPTE 2036-2-2008
+Table 1 for 22.2 audio systems with the Surround and Wide channels from
+DTS Coherent Acoustics (v.1.3.1) and 10.2 and 7.1 layouts. In the caps the
+actual channel layout is expressed with a channel count and a channel mask,
+which describes the existing channels. The positions in the bit mask correspond
+to the enum values.
+For negotiation it is allowed to have more bits set in the channel mask than
+the number of channels to specify the allowed channel positions but this is
+not allowed in negotiated caps. It is not allowed in any situation other
+than the one mentioned below to have less bits set in the channel mask than
+the number of channels.</p>
+<p><em class="parameter"><code>GST_AUDIO_CHANNEL_POSITION_MONO</code></em>
+ can only be used with a single mono channel that
+has no direction information and would be mixed into all directional channels.
+This is expressed in caps by having a single channel and no channel mask.</p>
+<p><em class="parameter"><code>GST_AUDIO_CHANNEL_POSITION_NONE</code></em>
+ can only be used if all channels have this position.
+This is expressed in caps by having a channel mask with no bits set.</p>
+<p>As another special case it is allowed to have two channels without a channel mask.
+This implicitely means that this is a stereo stream with a front left and front right
+channel.</p>
+<div class="refsect3">
+<a name="GstAudioChannelPosition.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-NONE:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_NONE</p></td>
+<td class="enum_member_description">
+<p>used for position-less channels, e.g.
+    from a sound card that records 1024 channels; mutually exclusive with
+    any other channel position</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-MONO:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_MONO</p></td>
+<td class="enum_member_description">
+<p>Mono without direction;
+    can only be used with 1 channel</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-INVALID:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_INVALID</p></td>
+<td class="enum_member_description">
+<p>invalid position</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-FRONT-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_FRONT_LEFT</p></td>
+<td class="enum_member_description">
+<p>Front left</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-FRONT-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_FRONT_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Front right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-FRONT-CENTER:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_FRONT_CENTER</p></td>
+<td class="enum_member_description">
+<p>Front center</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-LFE1:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_LFE1</p></td>
+<td class="enum_member_description">
+<p>Low-frequency effects 1 (subwoofer)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-REAR-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_REAR_LEFT</p></td>
+<td class="enum_member_description">
+<p>Rear left</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-REAR-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_REAR_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Rear right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-FRONT-LEFT-OF-CENTER:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_FRONT_LEFT_OF_CENTER</p></td>
+<td class="enum_member_description">
+<p>Front left of center</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-FRONT-RIGHT-OF-CENTER:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_FRONT_RIGHT_OF_CENTER</p></td>
+<td class="enum_member_description">
+<p>Front right of center</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-REAR-CENTER:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_REAR_CENTER</p></td>
+<td class="enum_member_description">
+<p>Rear center</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-LFE2:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_LFE2</p></td>
+<td class="enum_member_description">
+<p>Low-frequency effects 2 (subwoofer)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-SIDE-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_SIDE_LEFT</p></td>
+<td class="enum_member_description">
+<p>Side left</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-SIDE-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_SIDE_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Side right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-FRONT-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_FRONT_LEFT</p></td>
+<td class="enum_member_description">
+<p>Top front left</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-FRONT-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_FRONT_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Top front right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-FRONT-CENTER:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_FRONT_CENTER</p></td>
+<td class="enum_member_description">
+<p>Top front center</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-CENTER:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_CENTER</p></td>
+<td class="enum_member_description">
+<p>Top center</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-REAR-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_REAR_LEFT</p></td>
+<td class="enum_member_description">
+<p>Top rear left</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-REAR-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_REAR_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Top rear right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-SIDE-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_SIDE_LEFT</p></td>
+<td class="enum_member_description">
+<p>Top side right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-SIDE-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_SIDE_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Top rear right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-TOP-REAR-CENTER:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_TOP_REAR_CENTER</p></td>
+<td class="enum_member_description">
+<p>Top rear center</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-BOTTOM-FRONT-CENTER:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_BOTTOM_FRONT_CENTER</p></td>
+<td class="enum_member_description">
+<p>Bottom front center</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-BOTTOM-FRONT-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_BOTTOM_FRONT_LEFT</p></td>
+<td class="enum_member_description">
+<p>Bottom front left</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-BOTTOM-FRONT-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_BOTTOM_FRONT_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Bottom front right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-WIDE-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_WIDE_LEFT</p></td>
+<td class="enum_member_description">
+<p>Wide left (between front left and side left)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-WIDE-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_WIDE_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Wide right (between front right and side right)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-SURROUND-LEFT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_SURROUND_LEFT</p></td>
+<td class="enum_member_description">
+<p>Surround left (between rear left and side left)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-POSITION-SURROUND-RIGHT:CAPS"></a>GST_AUDIO_CHANNEL_POSITION_SURROUND_RIGHT</p></td>
+<td class="enum_member_description">
+<p>Surround right (between rear right and side right)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioChannelMixer"></a><h3>GstAudioChannelMixer</h3>
+<pre class="programlisting">typedef struct _GstAudioChannelMixer GstAudioChannelMixer;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioChannelMixerFlags"></a><h3>enum GstAudioChannelMixerFlags</h3>
+<p>Flags passed to <a class="link" href="gst-plugins-base-libs-Audio-channels.html#gst-audio-channel-mixer-new" title="gst_audio_channel_mixer_new ()"><code class="function">gst_audio_channel_mixer_new()</code></a></p>
+<div class="refsect3">
+<a name="GstAudioChannelMixerFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-MIXER-FLAGS-NONE:CAPS"></a>GST_AUDIO_CHANNEL_MIXER_FLAGS_NONE</p></td>
+<td class="enum_member_description">
+<p>no flag</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-MIXER-FLAGS-NON-INTERLEAVED-IN:CAPS"></a>GST_AUDIO_CHANNEL_MIXER_FLAGS_NON_INTERLEAVED_IN</p></td>
+<td class="enum_member_description">
+<p>input channels are not interleaved</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-MIXER-FLAGS-NON-INTERLEAVED-OUT:CAPS"></a>GST_AUDIO_CHANNEL_MIXER_FLAGS_NON_INTERLEAVED_OUT</p></td>
+<td class="enum_member_description">
+<p>output channels are not interleaved</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-MIXER-FLAGS-UNPOSITIONED-IN:CAPS"></a>GST_AUDIO_CHANNEL_MIXER_FLAGS_UNPOSITIONED_IN</p></td>
+<td class="enum_member_description">
+<p>input channels are explicitly unpositioned</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CHANNEL-MIXER-FLAGS-UNPOSITIONED-OUT:CAPS"></a>GST_AUDIO_CHANNEL_MIXER_FLAGS_UNPOSITIONED_OUT</p></td>
+<td class="enum_member_description">
+<p>output channels are explicitly unpositioned</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.26</div>
+</body>
+</html>

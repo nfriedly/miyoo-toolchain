@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstAudioConverter: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-audio.html" title="Audio Library">
+<link rel="prev" href="gst-plugins-base-libs-Audio-channels.html" title="Audio-channels">
+<link rel="next" href="gst-plugins-base-libs-GstAudioQuantize.html" title="GstAudioQuantize">
+<meta name="generator" content="GTK-Doc V1.26 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-base-libs-GstAudioConverter.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-audio.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-base-libs-Audio-channels.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-base-libs-GstAudioQuantize.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-base-libs-GstAudioConverter"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-base-libs-GstAudioConverter.top_of_page"></a>GstAudioConverter</span></h2>
+<p>GstAudioConverter</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstAudioConverter.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="returnvalue">GstAudioConverter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-new" title="gst_audio_converter_new ()">gst_audio_converter_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-free" title="gst_audio_converter_free ()">gst_audio_converter_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-samples" title="gst_audio_converter_samples ()">gst_audio_converter_samples</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-get-in-frames" title="gst_audio_converter_get_in_frames ()">gst_audio_converter_get_in_frames</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-get-max-latency" title="gst_audio_converter_get_max_latency ()">gst_audio_converter_get_max_latency</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-get-out-frames" title="gst_audio_converter_get_out_frames ()">gst_audio_converter_get_out_frames</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-update-config" title="gst_audio_converter_update_config ()">gst_audio_converter_update_config</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="returnvalue">GstStructure</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-get-config" title="gst_audio_converter_get_config ()">gst_audio_converter_get_config</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-reset" title="gst_audio_converter_reset ()">gst_audio_converter_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-supports-inplace" title="gst_audio_converter_supports_inplace ()">gst_audio_converter_supports_inplace</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstAudioConverter.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter">GstAudioConverter</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverterFlags" title="enum GstAudioConverterFlags">GstAudioConverterFlags</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GST-AUDIO-CONVERTER-OPT-DITHER-METHOD:CAPS" title="GST_AUDIO_CONVERTER_OPT_DITHER_METHOD">GST_AUDIO_CONVERTER_OPT_DITHER_METHOD</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GST-AUDIO-CONVERTER-OPT-NOISE-SHAPING-METHOD:CAPS" title="GST_AUDIO_CONVERTER_OPT_NOISE_SHAPING_METHOD">GST_AUDIO_CONVERTER_OPT_NOISE_SHAPING_METHOD</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GST-AUDIO-CONVERTER-OPT-QUANTIZATION:CAPS" title="GST_AUDIO_CONVERTER_OPT_QUANTIZATION">GST_AUDIO_CONVERTER_OPT_QUANTIZATION</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstAudioConverter.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/audio/audio.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstAudioConverter.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstAudioConverter.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-audio-converter-new"></a><h3>gst_audio_converter_new ()</h3>
+<pre class="programlisting"><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="returnvalue">GstAudioConverter</span></a> *
+gst_audio_converter_new (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverterFlags" title="enum GstAudioConverterFlags"><span class="type">GstAudioConverterFlags</span></a> flags</code></em>,
+                         <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioInfo" title="struct GstAudioInfo"><span class="type">GstAudioInfo</span></a> *in_info</code></em>,
+                         <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioInfo" title="struct GstAudioInfo"><span class="type">GstAudioInfo</span></a> *out_info</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *config</code></em>);</pre>
+<p>Create a new <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> that is able to convert between <em class="parameter"><code>in</code></em>
+ and <em class="parameter"><code>out</code></em>
+
+audio formats.</p>
+<p><em class="parameter"><code>config</code></em>
+ contains extra configuration options, see <span class="type">GST_VIDEO_CONVERTER_OPT_</span>*
+parameters for details about the options and values.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gst-audio-converter-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>extra <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverterFlags" title="enum GstAudioConverterFlags"><span class="type">GstAudioConverterFlags</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_info</p></td>
+<td class="parameter_description"><p>a source <a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioInfo" title="struct GstAudioInfo"><span class="type">GstAudioInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_info</p></td>
+<td class="parameter_description"><p>a destination <a class="link" href="gst-plugins-base-libs-GstAudio.html#GstAudioInfo" title="struct GstAudioInfo"><span class="type">GstAudioInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> with configuration options. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-converter-new.returns"></a><h4>Returns</h4>
+<p> a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if conversion is not possible.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-free"></a><h3>gst_audio_converter_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_audio_converter_free (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>);</pre>
+<p>Free a previously allocated <em class="parameter"><code>convert</code></em>
+ instance.</p>
+<div class="refsect3">
+<a name="gst-audio-converter-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-samples"></a><h3>gst_audio_converter_samples ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_converter_samples (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>,
+                             <em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverterFlags" title="enum GstAudioConverterFlags"><span class="type">GstAudioConverterFlags</span></a> flags</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> in[]</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> in_frames</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> out[]</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> out_frames</code></em>);</pre>
+<p>Perform the conversion with <em class="parameter"><code>in_frames</code></em>
+ in <em class="parameter"><code>in</code></em>
+ to <em class="parameter"><code>out_frames</code></em>
+ in <em class="parameter"><code>out</code></em>
+
+using <em class="parameter"><code>convert</code></em>
+.</p>
+<p>In case the samples are interleaved, <em class="parameter"><code>in</code></em>
+ and <em class="parameter"><code>out</code></em>
+ must point to an
+array with a single element pointing to a block of interleaved samples.</p>
+<p>If non-interleaved samples are used, <em class="parameter"><code>in</code></em>
+ and <em class="parameter"><code>out</code></em>
+ must point to an
+array with pointers to memory blocks, one for each channel.</p>
+<p><em class="parameter"><code>in</code></em>
+ may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, in which case <em class="parameter"><code>in_frames</code></em>
+ of silence samples are processed
+by the converter.</p>
+<p>This function always produces <em class="parameter"><code>out_frames</code></em>
+ of output and consumes <em class="parameter"><code>in_frames</code></em>
+ of
+input. Use <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-get-out-frames" title="gst_audio_converter_get_out_frames ()"><code class="function">gst_audio_converter_get_out_frames()</code></a> and
+<a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-get-in-frames" title="gst_audio_converter_get_in_frames ()"><code class="function">gst_audio_converter_get_in_frames()</code></a> to make sure <em class="parameter"><code>in_frames</code></em>
+ and <em class="parameter"><code>out_frames</code></em>
+
+are matching and <em class="parameter"><code>in</code></em>
+ and <em class="parameter"><code>out</code></em>
+ point to enough memory.</p>
+<div class="refsect3">
+<a name="gst-audio-converter-samples.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>extra <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverterFlags" title="enum GstAudioConverterFlags"><span class="type">GstAudioConverterFlags</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in</p></td>
+<td class="parameter_description"><p>input frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_frames</p></td>
+<td class="parameter_description"><p>number of input frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>output frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_frames</p></td>
+<td class="parameter_description"><p>number of output frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-converter-samples.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is the conversion could be performed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-get-in-frames"></a><h3>gst_audio_converter_get_in_frames ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+gst_audio_converter_get_in_frames (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> out_frames</code></em>);</pre>
+<p>Calculate how many input frames are currently needed by <em class="parameter"><code>convert</code></em>
+ to produce
+<em class="parameter"><code>out_frames</code></em>
+ of output frames.</p>
+<div class="refsect3">
+<a name="gst-audio-converter-get-in-frames.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_frames</p></td>
+<td class="parameter_description"><p>number of output frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-converter-get-in-frames.returns"></a><h4>Returns</h4>
+<p> the number of input frames</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-get-max-latency"></a><h3>gst_audio_converter_get_max_latency ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+gst_audio_converter_get_max_latency (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>);</pre>
+<p>Get the maximum number of input frames that the converter would
+need before producing output.</p>
+<div class="refsect3">
+<a name="gst-audio-converter-get-max-latency.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-converter-get-max-latency.returns"></a><h4>Returns</h4>
+<p> the latency of <em class="parameter"><code>convert</code></em>
+as expressed in the number of
+frames.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-get-out-frames"></a><h3>gst_audio_converter_get_out_frames ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+gst_audio_converter_get_out_frames (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> in_frames</code></em>);</pre>
+<p>Calculate how many output frames can be produced when <em class="parameter"><code>in_frames</code></em>
+ input
+frames are given to <em class="parameter"><code>convert</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-audio-converter-get-out-frames.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_frames</p></td>
+<td class="parameter_description"><p>number of input frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-converter-get-out-frames.returns"></a><h4>Returns</h4>
+<p> the number of output frames</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-update-config"></a><h3>gst_audio_converter_update_config ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_converter_update_config (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> in_rate</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> out_rate</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *config</code></em>);</pre>
+<p>Set <em class="parameter"><code>in_rate</code></em>
+, <em class="parameter"><code>out_rate</code></em>
+ and <em class="parameter"><code>config</code></em>
+ as extra configuration for <em class="parameter"><code>convert</code></em>
+.</p>
+<p><em class="parameter"><code>in_rate</code></em>
+ and <em class="parameter"><code>out_rate</code></em>
+ specify the new sample rates of input and output
+formats. A value of 0 leaves the sample rate unchanged.</p>
+<p><em class="parameter"><code>config</code></em>
+ can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, in which case, the current configuration is not
+changed.</p>
+<p>If the parameters in <em class="parameter"><code>config</code></em>
+ can not be set exactly, this function returns
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and will try to update as much state as possible. The new state can
+then be retrieved and refined with <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-get-config" title="gst_audio_converter_get_config ()"><code class="function">gst_audio_converter_get_config()</code></a>.</p>
+<p>Look at the <span class="type">GST_AUDIO_CONVERTER_OPT_</span>* fields to check valid configuration
+option and values.</p>
+<div class="refsect3">
+<a name="gst-audio-converter-update-config.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_rate</p></td>
+<td class="parameter_description"><p>input rate</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_rate</p></td>
+<td class="parameter_description"><p>output rate</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-converter-update-config.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> when the new parameters could be set</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-get-config"></a><h3>gst_audio_converter_get_config ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="returnvalue">GstStructure</span></a> *
+gst_audio_converter_get_config (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *in_rate</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *out_rate</code></em>);</pre>
+<p>Get the current configuration of <em class="parameter"><code>convert</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-audio-converter-get-config.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_rate</p></td>
+<td class="parameter_description"><p>result input rate</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_rate</p></td>
+<td class="parameter_description"><p>result output rate</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-converter-get-config.returns"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> that remains valid for as long as <em class="parameter"><code>convert</code></em>
+is valid
+or until <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-update-config" title="gst_audio_converter_update_config ()"><code class="function">gst_audio_converter_update_config()</code></a> is called.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-reset"></a><h3>gst_audio_converter_reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_audio_converter_reset (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>);</pre>
+<p>Reset <em class="parameter"><code>convert</code></em>
+ to the state it was when it was first created, clearing
+any history it might currently have.</p>
+<div class="refsect3">
+<a name="gst-audio-converter-reset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-audio-converter-supports-inplace"></a><h3>gst_audio_converter_supports_inplace ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_audio_converter_supports_inplace (<em class="parameter"><code><a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a> *convert</code></em>);</pre>
+<p>Returns whether the audio converter can perform the conversion in-place.
+The return value would be typically input to <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#gst-base-transform-set-in-place"><code class="function">gst_base_transform_set_in_place()</code></a></p>
+<div class="refsect3">
+<a name="gst-audio-converter-supports-inplace.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>convert</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#GstAudioConverter" title="GstAudioConverter"><span class="type">GstAudioConverter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-audio-converter-supports-inplace.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> when the conversion can be done in place.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-base-libs-GstAudioConverter.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstAudioConverter"></a><h3>GstAudioConverter</h3>
+<pre class="programlisting">typedef struct _GstAudioConverter GstAudioConverter;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioConverterFlags"></a><h3>enum GstAudioConverterFlags</h3>
+<p>Extra flags passed to <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-new" title="gst_audio_converter_new ()"><code class="function">gst_audio_converter_new()</code></a> and <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-samples" title="gst_audio_converter_samples ()"><code class="function">gst_audio_converter_samples()</code></a>.</p>
+<div class="refsect3">
+<a name="GstAudioConverterFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CONVERTER-FLAG-NONE:CAPS"></a>GST_AUDIO_CONVERTER_FLAG_NONE</p></td>
+<td class="enum_member_description">
+<p>no flag</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CONVERTER-FLAG-IN-WRITABLE:CAPS"></a>GST_AUDIO_CONVERTER_FLAG_IN_WRITABLE</p></td>
+<td class="enum_member_description">
+<p>the input sample arrays are writable and can be
+   used as temporary storage during conversion.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-AUDIO-CONVERTER-FLAG-VARIABLE-RATE:CAPS"></a>GST_AUDIO_CONVERTER_FLAG_VARIABLE_RATE</p></td>
+<td class="enum_member_description">
+<p>allow arbitrary rate updates with
+   <a class="link" href="gst-plugins-base-libs-GstAudioConverter.html#gst-audio-converter-update-config" title="gst_audio_converter_update_config ()"><code class="function">gst_audio_converter_update_config()</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-AUDIO-CONVERTER-OPT-DITHER-METHOD:CAPS"></a><h3>GST_AUDIO_CONVERTER_OPT_DITHER_METHOD</h3>
+<pre class="programlisting">#define GST_AUDIO_CONVERTER_OPT_DITHER_METHOD   "GstAudioConverter.dither-method"
+</pre>
+<p><span class="type">GST_TYPE_AUDIO_DITHER_METHOD</span>, The dither method to use when
+changing bit depth.
+Default is <a class="link" href="gst-plugins-base-libs-GstAudioQuantize.html#GST-AUDIO-DITHER-NONE:CAPS"><span class="type">GST_AUDIO_DITHER_NONE</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-AUDIO-CONVERTER-OPT-NOISE-SHAPING-METHOD:CAPS"></a><h3>GST_AUDIO_CONVERTER_OPT_NOISE_SHAPING_METHOD</h3>
+<pre class="programlisting">#define GST_AUDIO_CONVERTER_OPT_NOISE_SHAPING_METHOD   "GstAudioConverter.noise-shaping-method"
+</pre>
+<p><span class="type">GST_TYPE_AUDIO_NOISE_SHAPING_METHOD</span>, The noise shaping method to use
+to mask noise from quantization errors.
+Default is <a class="link" href="gst-plugins-base-libs-GstAudioQuantize.html#GST-AUDIO-NOISE-SHAPING-NONE:CAPS"><span class="type">GST_AUDIO_NOISE_SHAPING_NONE</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GST-AUDIO-CONVERTER-OPT-QUANTIZATION:CAPS"></a><h3>GST_AUDIO_CONVERTER_OPT_QUANTIZATION</h3>
+<pre class="programlisting">#define GST_AUDIO_CONVERTER_OPT_QUANTIZATION   "GstAudioConverter.quantization"
+</pre>
+<p><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#G-TYPE-UINT:CAPS"><span class="type">G_TYPE_UINT</span></a>, The quantization amount. Components will be
+quantized to multiples of this value.
+Default is 1</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.26</div>
+</body>
+</html>

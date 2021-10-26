@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 22.1.16
+Requires:
+Requires.private: zlib
+Libs: -L${libdir} -lfreetype
+Libs.private: -lpng16 -lbz2 -L/opt/miyoo/bin/../arm-miyoo-linux-uclibcgnueabi/sysroot/usr/lib -lpng16 -lz
+Cflags: -I${includedir}/freetype2

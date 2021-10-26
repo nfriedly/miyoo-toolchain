@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SDL_mixer
+Description: mixer library for Simple DirectMedia Layer
+Version: 1.2.12
+Requires: sdl >= 1.2.10
+Libs: -L${libdir} -lSDL_mixer
+Libs.private:  -lmad -lm
+Cflags: -I${includedir}/SDL
+

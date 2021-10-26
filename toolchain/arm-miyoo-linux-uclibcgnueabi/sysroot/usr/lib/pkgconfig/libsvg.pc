@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libsvg
+Description: library for parsing SVG content
+Version: 0.1.4
+Requires: 
+Libs: -L${libdir} -lsvg -lpng -ljpeg -lz
+Cflags: -I${includedir}

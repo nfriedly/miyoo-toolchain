@@ -1,0 +1,11 @@
+Xcode
+-----
+
+Generate Xcode project files.
+
+Toolset Selection
+^^^^^^^^^^^^^^^^^
+
+By default Xcode is allowed to select its own default toolchain.
+The :variable:`CMAKE_GENERATOR_TOOLSET` option may be set, perhaps
+via the :manual:`cmake(1)` ``-T`` option, to specify another toolset.

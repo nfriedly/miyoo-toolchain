@@ -1,0 +1,14 @@
+prefix=/opt/miyoo
+exec_prefix=/opt/miyoo
+libdir=/opt/miyoo/lib
+includedir=/opt/miyoo/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 22.1.16
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstProxyControlBinding: GStreamer 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-control.html" title="GStreamer Dynamic Parameter Control">
+<link rel="prev" href="GstDirectControlBinding.html" title="GstDirectControlBinding">
+<link rel="next" href="GstTimedValueControlSource.html" title="GstTimedValueControlSource">
+<meta name="generator" content="GTK-Doc V1.26 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gstreamer-libs-GstProxyControlBinding.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-control.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstDirectControlBinding.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GstTimedValueControlSource.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gstreamer-libs-GstProxyControlBinding"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gstreamer-libs-GstProxyControlBinding.top_of_page"></a>GstProxyControlBinding</span></h2>
+<p>GstProxyControlBinding — attachment for forwarding control sources</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstProxyControlBinding.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a href="../html/GstControlBinding.html#GstControlBinding-struct"><span class="returnvalue">GstControlBinding</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstProxyControlBinding.html#gst-proxy-control-binding-new" title="gst_proxy_control_binding_new ()">gst_proxy_control_binding_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstProxyControlBinding.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libs/controller/controller.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstProxyControlBinding.description"></a><h2>Description</h2>
+<p>A <a href="../html/GstControlBinding.html#GstControlBinding-struct"><span class="type">GstControlBinding</span></a> that forwards requests to another <a href="../html/GstControlBinding.html#GstControlBinding-struct"><span class="type">GstControlBinding</span></a></p>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstProxyControlBinding.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-proxy-control-binding-new"></a><h3>gst_proxy_control_binding_new ()</h3>
+<pre class="programlisting"><a href="../html/GstControlBinding.html#GstControlBinding-struct"><span class="returnvalue">GstControlBinding</span></a> *
+gst_proxy_control_binding_new (<em class="parameter"><code><a href="../html/GstObject.html#GstObject-struct"><span class="type">GstObject</span></a> *object</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_name</code></em>,
+                               <em class="parameter"><code><a href="../html/GstObject.html#GstObject-struct"><span class="type">GstObject</span></a> *ref_object</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *ref_property_name</code></em>);</pre>
+<p><span class="type">GstProxyControlBinding</span> forwards all access to data or <code class="function">sync_values()</code>
+requests from <em class="parameter"><code>property_name</code></em>
+ on <em class="parameter"><code>object</code></em>
+ to the control binding at
+<em class="parameter"><code>ref_property_name</code></em>
+ on <em class="parameter"><code>ref_object</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-proxy-control-binding-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>a <a href="../html/GstObject.html#GstObject-struct"><span class="type">GstObject</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property_name</p></td>
+<td class="parameter_description"><p>the property name in <em class="parameter"><code>object</code></em>
+to control</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ref_object</p></td>
+<td class="parameter_description"><p>a <a href="../html/GstObject.html#GstObject-struct"><span class="type">GstObject</span></a> to forward all
+<a href="../html/GstControlBinding.html#GstControlBinding-struct"><span class="type">GstControlBinding</span></a> requests to. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ref_property_name</p></td>
+<td class="parameter_description"><p>the property_name in <em class="parameter"><code>ref_object</code></em>
+to control</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-proxy-control-binding-new.returns"></a><h4>Returns</h4>
+<p> a new <a href="../html/GstControlBinding.html#GstControlBinding-struct"><span class="type">GstControlBinding</span></a> that proxies the control interface between
+properties on different <a href="../html/GstObject.html#GstObject-struct"><span class="type">GstObject</span></a>'s</p>
+</div>
+<p class="since">Since: 1.12</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstProxyControlBinding.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstProxyControlBinding.see-also"></a><h2>See Also</h2>
+<p><a href="../html/GstControlBinding.html#GstControlBinding-struct"><span class="type">GstControlBinding</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.26</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libsvg-cairo
+Description: render SVG content using cairo
+Version: 0.1.6
+Requires: libsvg cairo
+Libs: -L${libdir} -lsvg-cairo
+Cflags: -I${includedir}

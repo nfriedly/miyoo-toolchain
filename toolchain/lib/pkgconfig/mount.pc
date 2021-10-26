@@ -1,0 +1,11 @@
+prefix=/opt/miyoo
+exec_prefix=/opt/miyoo
+libdir=/opt/miyoo/lib
+includedir=/opt/miyoo/include
+
+Name: mount
+Description: mount library
+Version: 2.31.1
+Requires.private: blkid
+Cflags: -I${includedir}/libmount
+Libs: -L${libdir} -lmount

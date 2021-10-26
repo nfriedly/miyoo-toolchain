@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Part II. Object Hierarchy: GStreamer Base Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="up" href="index.html" title="GStreamer Base Plugins 1.0 Library Reference Manual">
+<link rel="prev" href="GstNavigation.html" title="GstNavigation">
+<link rel="next" href="api-index-full.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.26 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GstNavigation.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="part">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="gstreamer-libs-hierarchy"></a>Part II. Object Hierarchy</h1></div></div></div>
+<pre class="screen">
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseSrc.html#GstBaseSrc-struct">GstBaseSrc</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstPushSrc.html#GstPushSrc-struct">GstPushSrc</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstAudioCdSrc.html" title="GstAudioCdSrc">GstAudioCdSrc</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GstAudioBaseSrc.html" title="GstAudioBaseSrc">GstAudioBaseSrc</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>           <span class="lineart">╰──</span> <a class="link" href="GstAudioSrc.html" title="GstAudioSrc">GstAudioSrc</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstAudioDecoder.html" title="GstAudioDecoder">GstAudioDecoder</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstAudioEncoder.html" title="GstAudioEncoder">GstAudioEncoder</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#GstBaseTransform-struct">GstBaseTransform</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstAudioFilter.html" title="GstAudioFilter">GstAudioFilter</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstVideoFilter.html" title="GstVideoFilter">GstVideoFilter</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseSink.html#GstBaseSink-struct">GstBaseSink</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstAudioBaseSink.html" title="GstAudioBaseSink">GstAudioBaseSink</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstAudioSink.html" title="GstAudioSink">GstAudioSink</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstVideoSink.html" title="GstVideoSink">GstVideoSink</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstRTPBaseDepayload.html" title="GstRTPBaseDepayload">GstRTPBaseDepayload</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstRTPBasePayload.html" title="GstRTPBasePayload">GstRTPBasePayload</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GstRTPBaseAudioPayload.html" title="GstRTPBaseAudioPayload">GstRTPBaseAudioPayload</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstClock.html#GstClock-struct">GstClock</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstSystemClock.html#GstSystemClock-struct">GstSystemClock</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GstAudioClock.html" title="GstAudioClock">GstAudioClock</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GstAudioRingBuffer.html" title="GstAudioRingBuffer">GstAudioRingBuffer</a>
+    <span class="lineart">├──</span> <a class="link" href="GstColorBalanceChannel.html" title="GstColorBalanceChannel">GstColorBalanceChannel</a>
+    <span class="lineart">├──</span> <a class="link" href="GstDiscoverer.html" title="GstDiscoverer">GstDiscoverer</a>
+    <span class="lineart">├──</span> <a class="link" href="GstEncodingProfile.html" title="GstEncodingProfile">GstEncodingProfile</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstEncodingProfile.html#GstEncodingVideoProfile">GstEncodingVideoProfile</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstEncodingProfile.html#GstEncodingAudioProfile">GstEncodingAudioProfile</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstEncodingProfile.html#GstEncodingContainerProfile">GstEncodingContainerProfile</a>
+    <span class="lineart">├──</span> <a class="link" href="GstEncodingProfile.html#GstEncodingTarget">GstEncodingTarget</a>
+    <span class="lineart">╰──</span> <a class="link" href="GstDiscoverer.html#GstDiscovererInfo">GstDiscovererInfo</a>
+    <a href="/usr/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">├──</span> <a class="link" href="GstNavigation.html" title="GstNavigation">GstNavigation</a>
+    <span class="lineart">├──</span> <a class="link" href="GstStreamVolume.html" title="GstStreamVolume">GstStreamVolume</a>
+    <span class="lineart">├──</span> <a class="link" href="GstColorBalance.html" title="GstColorBalance">GstColorBalance</a>
+    <span class="lineart">├──</span> <a class="link" href="GstVideoDirection.html" title="GstVideoDirection">GstVideoDirection</a>
+    <span class="lineart">├──</span> <a class="link" href="GstVideoOrientation.html" title="GstVideoOrientation">GstVideoOrientation</a>
+    <span class="lineart">╰──</span> <a class="link" href="GstVideoOverlay.html" title="GstVideoOverlay">GstVideoOverlay</a>
+</pre>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.26</div>
+</body>
+</html>

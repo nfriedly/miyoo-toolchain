@@ -1,0 +1,19 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+includedir=${prefix}/include
+
+docdir=${datarootdir}/doc/libxml++-2.6
+doxytagfile=${docdir}/reference/libxml++-2.6.tag
+htmlrefdir=${docdir}/reference/html
+htmlrefpub=http://library.gnome.org/devel/libxml++/unstable/
+
+Name: libxml++
+Description: C++ wrapper for libxml
+Version: 2.40.1
+URL: http://libxmlplusplus.sourceforge.net/
+Requires: libxml-2.0 >= 2.7.7 glibmm-2.4 >= 2.32.0
+Libs: -L${libdir} -lxml++-2.6
+Cflags: -I${includedir}/libxml++-2.6 -I${libdir}/libxml++-2.6/include
