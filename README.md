@@ -1,4 +1,4 @@
-# miyoo-toolchain
+# Miyoo Toolchain
 Toolchain and dockerfile to build the [Miyoo Custom Firmware (CFW)](https://github.com/TriForceX/MiyooCFW)
 
 See https://github.com/TriForceX/MiyooCFW/wiki/Build-Source for more info.
