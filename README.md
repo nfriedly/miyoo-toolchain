@@ -11,7 +11,7 @@ You have to pass in an absolute path to the source code for the first part of th
 
 ```sh
 docker pull nfriedly/miyoo-toolchain:musl
-docker run -volume //c/users/desktop/path/to/miyoo/:/src/ -it nfriedly/miyoo-toolchain:musl
+docker run --volume //c/users/desktop/path/to/miyoo/:/src/ -it nfriedly/miyoo-toolchain:musl
 # starting here, commands are executed inside the docker image
 cd /src
 make
