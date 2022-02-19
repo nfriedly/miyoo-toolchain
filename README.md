@@ -27,6 +27,8 @@ See this example: https://github.com/MiyooCFW/gmenunx/pull/6/files
 
 ## Development 
 
+First make sure you have the buildroot code. Either clone with `git clone --recurse-submodules https://github.com/nfriedly/miyoo-toolchain.git` if you haven't already cloned the repo or else run `git submodule init` if you have. 
+
 To build:
 
 ```sh
