@@ -1,9 +1,9 @@
-# Miyoo Toolchain
-Toolchain and dockerfile to build the [Miyoo Custom Firmware (CFW)](https://github.com/TriForceX/MiyooCFW)
+# Miyoo Toolchain Docker
+Dockerfile to build an image with the toolchain and other dependencies necessary to build software for [Miyoo Custom Firmware (CFW)](https://github.com/TriForceX/MiyooCFW)
 
 See https://github.com/TriForceX/MiyooCFW/wiki/Build-Source for more info.
 
-WORK IN PROGRESS: Currently both the "musl" and "steward" tags are actually building the legacy "steward" version, but that should change soon.
+WORK IN PROGRESS: Currently both the "musl" and "steward" tags are actually builds of the legacy "steward" version, but that should change soon.
 
 ## Local Usage
 
