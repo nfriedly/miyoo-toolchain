@@ -14,4 +14,4 @@ WORKDIR /buildroot
 # it doesn't like running as root, but meh
 ARG FORCE_UNSAFE_CONFIGURE=1
 # compile and "install" the toolchain
-RUN make sdk && mv output/host/ /opt/bittboy-toolchain
+RUN make sdk && mv output/host/ /opt/miyoo
