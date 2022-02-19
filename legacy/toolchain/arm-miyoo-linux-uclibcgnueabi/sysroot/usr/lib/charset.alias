@@ -1,5 +1,0 @@
-# This file contains a table of character encoding aliases,
-# suitable for operating system 'linux-uclibcgnueabi'.
-# It was automatically generated from config.charset.
-# Packages using this file: @PACKAGE@ glib gettext-runtime 
-ISO_646.IRV:1983 ASCII
