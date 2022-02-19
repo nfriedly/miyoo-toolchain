@@ -3,6 +3,8 @@ Toolchain and dockerfile to build the [Miyoo Custom Firmware (CFW)](https://gith
 
 See https://github.com/TriForceX/MiyooCFW/wiki/Build-Source for more info.
 
+Currently both the "latest" and "steward" tags are actually building the legacy "steward" version, but that should change soon.
+
 ## Local Usage
 
 Requires docker - https://www.docker.com/
