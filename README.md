@@ -28,7 +28,7 @@ See this example: https://github.com/MiyooCFW/gmenunx/pull/6/files
 To build:
 
 ```sh
-docker build --tag nfriedly/miyoo-toolchain:latest .
+docker build --tag nfriedly/miyoo-toolchain .
 ```
 
 To publish:

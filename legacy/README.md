@@ -1,7 +1,7 @@
 # Miyoo 1.3.3 Toolchain
 Dockerfiles to build images with the toolchain and other dependencies for compiling software for the 1.3.3 release of the [Miyoo Custom Firmware (CFW)](https://github.com/TriForceX/MiyooCFW)
 
-Miyoo 1.3.3 and older use glibc, whereas newer builds use musl libc.
+Miyoo 1.3.3 and older use uClibc, whereas newer builds use musl libc.
 
 See https://github.com/TriForceX/MiyooCFW/wiki/Build-Source for more info.
 
