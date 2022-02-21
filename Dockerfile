@@ -23,6 +23,6 @@ RUN git clone https://github.com/MiyooCFW/buildroot.git && \
     cd .. \
     rm -rf buildroot
 
-# we need the boost libraries to be avaliable to the cross-compile toolchain
+# we need the boost libraries to be avaliable to software using the cross-compile toolchain
 # todo: this seems like the wrong way to do this, figure out the correct method
 RUN mv /usr/include/boost/ /opt/miyoo/arm-buildroot-linux-musleabi/sysroot/usr/include/

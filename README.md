@@ -3,6 +3,8 @@ Dockerfile to build an image with the toolchain and other dependencies necessary
 
 See https://github.com/TriForceX/MiyooCFW/wiki/Build-Source for more info.
 
+Work In Progress: the `latest` tag with the musl libc toolchain is not yet functional. The legacy `steward` tag is, but uses the older uClibc toolchain.
+
 ## Local Usage
 
 Requires docker - https://www.docker.com/
