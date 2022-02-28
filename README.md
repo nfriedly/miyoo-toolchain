@@ -3,7 +3,11 @@ Dockerfile to build an image with the toolchain and other dependencies necessary
 
 See https://github.com/TriForceX/MiyooCFW/wiki/Build-Source for more info.
 
-Work In Progress: not all Miyoo software (in particular GmenuNX) can be built with the `latest` tag with the musl libc toolchain. The legacy `steward` tag works, but uses the older uClibc toolchain.
+Docker Hub: https://hub.docker.com/r/nfriedly/miyoo-toolchain
+
+The `:latest` tag contains a musl libc-based toolchain, and should be used for Miyoo 1.4+.
+
+The `:steward` tag uses the older uClibc toolchain and should be used for Miyoo 1.3.3 and older.
 
 ## Local Usage
 
