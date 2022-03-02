@@ -20,3 +20,11 @@ RUN git clone https://github.com/nfriedly/buildroot.git && \
     mv output/host/ /opt/miyoo && \
     cd .. \
     rm -rf buildroot
+
+# set up some env properties (these are based on Arcnor's image)
+ENV CROSS_ROOT=/opt/miyoo
+ENV CROSS_TRIPLE=arm-buildroot-linux-musleabi
+ENV SYSROOT="${CROSS_ROOT}/$(CROSS_TRIPLE)/sysroot"
+ENV PATH=":${PATH}:${CROSS_ROOT}/bin:${SYSROOT}/usr/bin"
+ENV ARCH=arm
+ENV CROSS_COMPILE="$(CROSS_TRIPLE)-"
