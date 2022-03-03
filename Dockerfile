@@ -18,7 +18,7 @@ RUN git clone https://github.com/nfriedly/buildroot.git && \
     cd buildroot && \
     make sdk && \
     mv output/host/ /opt/miyoo && \
-    cd .. \
+    cd .. && \
     rm -rf buildroot
 
 # set up some env properties (these are based on Arcnor's image)
