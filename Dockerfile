@@ -5,10 +5,12 @@ LABEL description="Build environment for Miyoo Custom Firmware"
 
 # install build dependencies
 # first two lines are needed just to build the toolchain
+# dosfstools is needed for main boot
 # finally, run some cleanup
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y make gcc g++ \
-    file wget cpio zip unzip rsync bc git && \
+    file wget cpio zip unzip rsync bc git \
+    dosfstools && \
     apt-get -y autoremove && apt-get -y clean
 
 # it doesn't like running as root, but meh
