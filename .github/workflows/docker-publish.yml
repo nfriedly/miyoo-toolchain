@@ -36,8 +36,10 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          # create token at https://hub.docker.com/settings/security
+          # set values at https://github.com/nfriedly/miyoo-toolchain/settings/secrets/actions
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
