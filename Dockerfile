@@ -1,7 +1,6 @@
-# start with the ubuntu base image
-FROM ubuntu 
+LABEL description="Legacy (uClibc/steward) build environment Miyoo Custom Firmware based on arcnor's image" 
 
-LABEL description="Build environment for Miyoo Custom Firmware" 
+FROM arcnor/toolchain-bittboy:steward
 
 # install build dependencies
 # first two lines are needed just to build the toolchain
@@ -14,21 +13,3 @@ RUN apt-get update && apt-get install -y make gcc g++ \
     dosfstools u-boot-tools \
     python-dev swig && \
     apt-get -y autoremove && apt-get -y clean
-
-# it doesn't like running as root, but meh
-ARG FORCE_UNSAFE_CONFIGURE=1
-# Download the source, compile and "install" the toolchain, cleanup
-RUN git clone https://github.com/nfriedly/buildroot.git && \
-    cd buildroot && \
-    make sdk && \
-    mv output/host/ /opt/miyoo && \
-    cd .. && \
-    rm -rf buildroot
-
-# set up some env properties (these are based on Arcnor's image)
-ENV CROSS_ROOT=/opt/miyoo
-ENV CROSS_TRIPLE=arm-buildroot-linux-musleabi
-ENV SYSROOT="${CROSS_ROOT}/$(CROSS_TRIPLE)/sysroot"
-ENV PATH=":${PATH}:${CROSS_ROOT}/bin:${SYSROOT}/usr/bin"
-ENV ARCH=arm
-ENV CROSS_COMPILE="$(CROSS_TRIPLE)-"
