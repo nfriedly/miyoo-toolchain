@@ -1,6 +1,6 @@
-LABEL description="Legacy (uClibc/steward) build environment Miyoo Custom Firmware based on arcnor's image" 
-
 FROM arcnor/toolchain-bittboy:steward
+
+LABEL description="Legacy (uClibc/steward) build environment Miyoo Custom Firmware based on arcnor's image" 
 
 # install build dependencies
 # first two lines are needed just to build the toolchain
