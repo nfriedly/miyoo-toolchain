@@ -1,6 +1,6 @@
 name: Publish to Docker hub
 
-on: [ push, pull_requst ]
+on: [ push, pull_request ]
 
 env:
   # github.repository as <account>/<repo>
